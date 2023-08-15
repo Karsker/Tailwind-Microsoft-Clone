@@ -36,17 +36,40 @@
             <div class="account text-[13px] md:flex items-center gap-2"><p class="hidden md:block">Sign in</p><img class="w-[30px] h-[30px]" src="/src/assets/images/user-icon.png" alt=""></div>
         </div>
     </div>
-    <div class="slider flex flex-col md:flex-row md:w-full  ">
-        <div class="left">
-            <img src="/src/assets/images/surface-pro-9.avif" alt="">
+    <div class="productSlider">
+        <div class="productCard slider flex-col md:flex-row md:w-full hidden">
+            <div class="left">
+                <img class="hidden md:block" src="/src/assets/images/surface-pro-9-long.avif" alt="">
+            </div>
+            <div class="left">
+                <img class="md:hidden" src="/src/assets/images/surface-pro-9.avif" alt="">
+            </div>
+            <div class="left md:w-1/3 p-5 md:top-[40%] md:right-[5%] md:translate-y-[-50%] flex md:absolute bg-auto flex-col text-start gap-5">
+                <h1 class="text-2xl md:text-4xl font-semibold text-gray-900">Surface Pro 9</h1>
+                <p class="">Tablet versatility and laptop power — all in one ultra-portable device</p>
+                <button class="bg-[#0067b8] text-white font-semibold w-[120px] py-2 px-2">Learn more</button>
+            </div>
         </div>
-        <div class="right p-5 md:bg-[#f2f2f2] flex flex-col text-start w-auto  flex-grow justify-center gap-5">
-            <h1 class="text-2xl md:text-3xl font-semibold text-gray-900">Surface Pro 9</h1>
-            <p class="">Tablet versatility and laptop power — all in one ultra-portable device</p>
-            <button class="bg-[#0067b8] text-white font-semibold w-[120px] py-2 px-2">Learn more</button>
+        <div class="productCard relative slider flex-col md:flex-row md:w-full ">
+            <div class="right">
+                <img class="hidden md:block" src="/src/assets/images/microsoft-365-long.avif" alt="">
+            </div>
+            <div class="right">
+                <img class="md:hidden" src="/src/assets/images/microsoft-365.avif" alt="">
+            </div>
+            <div class="left md:w-1/3 p-5 md:top-[50%] md:left-[10%] md:translate-y-[-50%] flex md:absolute bg-auto flex-col text-start gap-5">
+                <h1 class="text-2xl md:text-4xl font-semibold text-gray-900">Microsoft 365</h1>
+                <p class="">Turn your ideas into reality, stay safer online and off, and focus on what matters most with Microsoft 365 apps</p>
+                <button class="bg-[#0067b8] text-white font-semibold w-[150px] rounded-sm py-2 px-2">For one person</button>
+            </div>
         </div>
-        
     </div>
+    </div>
+    <div class="slider-controls flex justify-center mt-5 gap-3">
+        <img id="slider-back" class="w-5 cursor-pointer" onclick="plusSlides(-1)" src="/src/assets/images/arrow-left.png" alt="">
+        <img id="slider-ahead" class="w-5 cursor-pointer" onclick="plusSlides(1)" src="/src/assets/images/arrow-right.png" alt="">
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
